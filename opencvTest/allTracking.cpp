@@ -26,7 +26,8 @@ void ALLTracks::camshiftTracking(cv::Mat &frame, cv::Rect faceBox){
 		if (camshift != NULL)
 			delete camshift;
 	}
-		camshift = new Camshift();
+		//camshift = new Camshift();
+	Camshift camshift;
 		//if need change the initBox or not
 		//std::cout << "faceBox: " << faceBox.x << "," << faceBox.y << ","<< faceBox.width << "," << faceBox.height << std::endl;
 		if (0 == initBox.area())
@@ -42,7 +43,7 @@ void ALLTracks::camshiftTracking(cv::Mat &frame, cv::Rect faceBox){
 			//}
 		}
 		initBox = faceBox;
-		camshift->initialize(frame, initBox);
+		camshift.initialize(frame, initBox);
 		std::cout << "Camshift tracking init!" << std::endl;
 		startTracking = true;
 		beginInit = false;
@@ -53,8 +54,8 @@ void ALLTracks::camshiftTracking(cv::Mat &frame, cv::Rect faceBox){
 	//bool res;
 	if (startTracking){
 		std::cout << "Camshift tracking process..." << std::endl;
-		camshift->processFrame(frame);
-		RotatedRect rect_rotate = camshift->objectBox;
+		camshift.processFrame(frame);
+		RotatedRect rect_rotate = camshift.objectBox;
 		Point2f vertices[4];
 		rect_rotate.points(vertices);
 		rect_new = rect_rotate.boundingRect();
