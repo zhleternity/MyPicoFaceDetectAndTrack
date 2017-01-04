@@ -152,7 +152,7 @@ void MyPico::processImage(cv::Mat &frame, ALLTracks track, int drawFlag, bool us
 				bool overlap_flag = isOverlap(rect_curr, track.rect_new);
 				float area_join, area_union;
 				float ratio = computeRectJoinUnion(rect_curr, track.rect_new, area_join, area_union);
-				std::cout << "the ratio of overlap is: " << ratio << std::endl;
+				//std::cout << "the ratio of overlap is: " << ratio << std::endl;
 				if ( ratio > 0.8)
 				{
 					// do not take face
