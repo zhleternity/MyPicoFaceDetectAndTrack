@@ -82,7 +82,7 @@ void MyPico::processImage(cv::Mat &frame, ALLTracks track, int drawFlag, bool us
 		ncols = pyr[0].cols;
 		ldim = pyr[0].step;
 
-		ndetections = find_objects(rs, cs, ss, qs, MAXNDETECTIONS, cascade, angle, pixels, nrows, ncols, ldim, scalefactor, stridefactor, MAX(16, minsize), MIN(128, maxsize));
+		ndetections = find_objects(rs, cs, ss, qs, MAXNDETECTIONS, cascade, angle, pixels, nrows, ncols, ldim, scalefactor, stridefactor, MAX(16, minsize), MIN(128, maxsize));//16, 128
 
 		for (int i = 1; i<5; ++i)
 		{
@@ -93,7 +93,7 @@ void MyPico::processImage(cv::Mat &frame, ALLTracks track, int drawFlag, bool us
 			ncols = pyr[i].cols;
 			ldim = pyr[i].step;
 
-			nd = find_objects(&rs[ndetections], &cs[ndetections], &ss[ndetections], &qs[ndetections], MAXNDETECTIONS - ndetections, cascade, angle, pixels, nrows, ncols, ldim, scalefactor, stridefactor, MAX(64, minsize >> i), MIN(128, maxsize >> i));
+			nd = find_objects(&rs[ndetections], &cs[ndetections], &ss[ndetections], &qs[ndetections], MAXNDETECTIONS - ndetections, cascade, angle, pixels, nrows, ncols, ldim, scalefactor, stridefactor, MAX(64, minsize >> i), MIN(128, maxsize >> i));//64, 128
 
 			for (int j = ndetections; j<ndetections + nd; ++j)
 			{

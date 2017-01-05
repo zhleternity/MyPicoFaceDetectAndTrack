@@ -1,8 +1,8 @@
-﻿生成启动时间为 2016/12/30 11:16:52。
+﻿生成启动时间为 2017/1/4 16:10:59。
      1>项目“D:\zhlWorkDocs\testWorksDemo\opencvTest\opencvTest\opencvTest.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _SCL_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt allTracking.cpp
-         allTracking.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _SCL_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt test_opencv.cpp
+         test_opencv.cpp
      1>d:\zhlworkdocs\testworksdemo\opencvtest\opencvtest\cmt\cmt.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
      1>d:\zhlworkdocs\testworksdemo\opencvtest\opencvtest\cmt\matcher.h(17): warning C4305: “初始化”: 从“double”到“float”截断
        Link:
@@ -23,4 +23,4 @@
 
 生成成功。
 
-已用时间 00:00:05.27
+已用时间 00:00:01.72

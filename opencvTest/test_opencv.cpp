@@ -7,7 +7,7 @@ int main()
 	void *cascade = 0;
 
 	// set default parameters
-	int minsize = 45;//45
+	int minsize = 60;//45 55
 	int maxsize = 1024;//300
 	float angle = 0.0f;
 	float scalefactor = 1.1f;
@@ -20,7 +20,7 @@ int main()
 	MyPico pico;
 	ALLTracks track;
 	//help infos
-	pico.help();
+	//pico.help();
 
 	int size;
 	FILE* file;
